@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="suncat_admin_page_board.routes_config.class"/>
+        <parameter key="suncat_admin_page_board.routes_loader.class"/>
+        <parameter key="suncat_admin_page_board.page_boards.routes_config"/>
+        <parameter key="suncat_admin_page_board.routes_prefix_name"/>
+    </parameters>
+
+    <services>
+        <service id="suncat_admin_page_board.routes_loader" class="%suncat_admin_page_board.routes_loader.class%">
+            <argument type="service" id="suncat_admin_page_board.routes_config"/>
+            <tag name="routing.loader" />
+        </service>
+        <service id="suncat_admin_page_board.routes_config" class="%suncat_admin_page_board.routes_config.class%">
+            <argument>%suncat_admin_page_board.page_boards.routes_config%</argument>
+            <argument>%suncat_admin_page_board.routes_prefix_name%</argument>
+        </service>
+    </services>
+</container>

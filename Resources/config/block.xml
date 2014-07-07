@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="suncat_admin_page_board.block.loader.class">Suncat\AdminPageBoardBundle\Block\Loader\ServiceLoader</parameter>
+        <parameter key="suncat_admin_page_board.block.loader.chain.class">Suncat\AdminPageBoardBundle\Block\Loader\BlockLoaderChain</parameter>
+    </parameters>
+
+    <services>
+        <service id="suncat_admin_page_board.block.loader" class="%suncat_admin_page_board.block.loader.class%">
+            <tag name="sonata.block.loader"/>
+            <argument/>
+        </service>
+        <service id="suncat_admin_page_board.block.loader.chain" class="%suncat_admin_page_board.block.loader.chain.class%">
+            <argument/>
+        </service>
+    </services>
+</container>
