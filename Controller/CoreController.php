@@ -19,7 +19,25 @@ class CoreController extends BaseCoreController
     {
         $request = $this->getRequest();
         $pageBoardManager = $this->get('suncat_admin_page_board.manager');
-        $pageBlocks = $pageBoardManager->getPageBlocksByRequest($request);
+        $sonataAdminVersion = $this->container->getParameter('suncat_admin_page_board.sonata_admin_version');
+
+        $pageBlocks = $pageBlocks = $pageBoardManager->getPageBlocksByRequest($request);
+
+        if ($sonataAdminVersion >= 2.3) {
+            $blocks = array(
+                'top'    => array(),
+                'left'   => array(),
+                'center' => array(),
+                'right'  => array(),
+                'bottom' => array()
+            );
+
+            foreach ($pageBlocks as $block) {
+                $blocks[$block['position']][] = $block;
+            }
+
+            $pageBlocks = $blocks;
+        }
 
         return $this->render($pageBoardManager->getTemplate(), array(
             'base_template'   => $this->getBaseTemplate(),

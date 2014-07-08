@@ -55,6 +55,7 @@ class SuncatAdminPageBoardExtension extends Extension
         $container->setParameter('suncat_admin_page_board.routes_config.class', $config['routes_config_class']);
         $container->setParameter('suncat_admin_page_board.sonata_admin_layout_template', $config['sonata_admin_layout_template']);
         $container->setParameter('suncat_admin_page_board.page_board_template', $config['page_board_template']);
+        $container->setParameter('suncat_admin_page_board.sonata_admin_version', $config['sonata_admin_version']);
 
         $container->getDefinition('suncat_admin_page_board.block.loader')->replaceArgument(0, $blockTypes);
     }

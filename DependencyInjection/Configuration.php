@@ -65,6 +65,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('routes_config_class')->defaultValue('Suncat\AdminPageBoardBundle\Routing\RouteConfig')->end()
                 ->scalarNode('sonata_admin_layout_template')->defaultNull('SuncatAdminPageBoardBundle::layout.html.twig')->end()
                 ->scalarNode('page_board_template')->defaultValue('SuncatAdminPageBoardBundle:Core:page_board.html.twig')->end()
+                ->scalarNode('sonata_admin_version')->defaultValue(2.3)->end()
             ->end();
 
         return $treeBuilder;
