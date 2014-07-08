@@ -251,5 +251,5 @@ class EntityAdmin extends Admin
 
 ### Click on `Board` button and look something this
 
-![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen2.png)
+![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)
