@@ -37,3 +37,7 @@ TODO
 - Add prepared block service for view entity data by configureShowFields() of EntityAdmin class
 - Add prepared list actions
 - Improve opportunities for least manual work (writing code)
+
+Example screen
+------------
+![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)
