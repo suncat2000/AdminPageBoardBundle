@@ -1,19 +1,17 @@
 Getting Started With SuncatAdminPageBoard
 =====================================
 
-## Installation
+### Installation
 
-Installation:
+[Setting up the bundle](install.md)
 
-* [Setting up the bundle](install.md)
+### Bundle usage
 
-## Bundle usage
-
-- [Block with entity data](1-view-entity-data.md)
+[Block with entity data](1-view-entity-data.md)
 
 ### Config reference
 
-- [Configuration reference](configuration-reference.md) for a reference on the available configuration options
+[Configuration reference](configuration-reference.md) for a reference on the available configuration options
 
 ### Sandbox
 

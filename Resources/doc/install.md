@@ -44,8 +44,6 @@ sonata_block:
         sonata.block.service.text: ~
 ````
 
-```
-
 ### Conﬁgure `suncat_admin_page_board` in your YAML conﬁguration
 ````
 # app/conﬁg/conﬁg.yml

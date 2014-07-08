@@ -1,5 +1,5 @@
 Usage example with entity data in block
-============
+__________
 
 ### Create your Block service class
 
@@ -249,3 +249,7 @@ class EntityAdmin extends Admin
     </a>
 {% endif %}
 ````
+
+### Click on `Board` button and look something this
+
+![](https://github.com/suncat2000/AdminPageBoardBundle/tree/master/Resources/doc/screen1.png)
