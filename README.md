@@ -14,7 +14,7 @@ Features
 
 
 Documentation
-============
+------------
 
 The bulk of the documentation is stored in the `Resources/doc/index.md` file in this bundle:
 
