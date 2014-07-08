@@ -249,9 +249,8 @@ class EntityAdmin extends Admin
 {% endif %}
 ````
 
-### Click on `Board` button and look something this
-
+### Click on `Board` button
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen2.png)
 
-
+### Look something this
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)
