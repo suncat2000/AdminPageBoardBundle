@@ -33,6 +33,15 @@ public function registerBundles()
 
 ```
 
+#### Define routes 
+````
+# app/config/routing.yml
+_suncat_admin_page_board:
+    resource: .
+    type: sonata_admin_page_board
+    prefix: /admin
+````
+
 #### Conﬁgure `sonata_block` in your YAML conﬁguration
 ````
 # app/conﬁg/conﬁg.yml
