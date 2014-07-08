@@ -19,7 +19,7 @@ Run command:
 Or run command:
 `php composer.phar require suncat/admin-page-board-bundle dev-master`
 
-### Add this bundle to your application's kernel
+#### Add this bundle to your application's kernel
 ``` php
 // app/AppKernel.php
 public function registerBundles()
@@ -33,7 +33,7 @@ public function registerBundles()
 
 ```
 
-### Conﬁgure `sonata_block` in your YAML conﬁguration
+#### Conﬁgure `sonata_block` in your YAML conﬁguration
 ````
 # app/conﬁg/conﬁg.yml
 sonata_block:
@@ -44,7 +44,7 @@ sonata_block:
         sonata.block.service.text: ~
 ````
 
-### Conﬁgure `suncat_admin_page_board` in your YAML conﬁguration
+#### Conﬁgure `suncat_admin_page_board` in your YAML conﬁguration
 ````
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
