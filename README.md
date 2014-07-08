@@ -37,6 +37,7 @@ TODO
 - Add prepared block service for view entity data by configureShowFields() of EntityAdmin class
 - Add prepared list actions
 - Improve opportunities for least manual work (writing code)
+- Implement adding page-board link to sidebar menu
 
 Example screen
 ------------
