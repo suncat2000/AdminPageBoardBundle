@@ -1,5 +1,5 @@
 Usage example with entity data in block
-__________
+------------
 
 ### Create your Block service class
 
@@ -199,7 +199,6 @@ suncat_admin_page_board:
                 path: /namespace/your/entity/{id}/board
                 requirements:
                     id:  \d+
-````
 ````
 
 ### Add custom `list` action button for EntityAdmin
