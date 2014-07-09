@@ -242,8 +242,8 @@ class EntityAdmin extends Admin
 - [Full options for 'board' action](5-board-action-reference.md)
 - [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
 
-### Click on `Board` button
+#### Click on `Board` button
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen2.png)
 
-### Look something this
+#### Look something this
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)
