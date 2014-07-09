@@ -5,8 +5,8 @@ Getting Started With SuncatAdminPageBoard
 - [Setting up the bundle](install.md)
 
 #### Bundle usage
-- [Create block for show Entity data](1-show-entity-data.md)
-- [Using prepared block for show Entity data (by data from configureShowFields()) of EntityAdmin class](2-show-entity-data-auto.md)
+- [Create block for show Entity](1-show-entity-data.md)
+- [Using prepared block for show Entity](2-show-entity-data-auto.md) by data from configureShowFields() of EntityAdmin class
 
 #### Config reference
 - [Configuration reference](configuration-reference.md) for a reference on the available configuration options
