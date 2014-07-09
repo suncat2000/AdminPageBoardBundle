@@ -10,7 +10,7 @@ Features
 * Configure position (left,center,right, if sonata >= 2.3 then top,bottom) for every block of page-board
 * Customization every block (blocks based on SonataBlockBundle) with Twig, Bootstrap and another tools
 * Define custom route for every page (custom name, path, host, etc.)
-* Pass route params (`$request->attributes->get('_route_params')`) into every block settings (`$blockContext->getSettings()['route_params']`)
+* Pass route params (`$request->get('_route_params')`) into every block settings (`$blockContext->getSettings()['route_params']`)
 
 
 Documentation

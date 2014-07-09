@@ -73,7 +73,7 @@ class PageBoardManager
      */
     public function getPageBlocksByRequest(Request $request)
     {
-        $routeName = $request->attributes->get('_route');
+        $routeName = $request->get('_route');
         $pageName = $this->routeConfig->getPageName($routeName);
 
         if (!isset($this->pageBlocks[$pageName])) {
@@ -89,7 +89,7 @@ class PageBoardManager
 
         // add route_params to blocks
         foreach ($blocks as $index => $block) {
-            $blocks[$index]['settings']['route_params'] = $request->attributes->get('_route_params');
+            $blocks[$index]['settings']['route_params'] = $request->get('_route_params');
         }
 
         return $blocks;

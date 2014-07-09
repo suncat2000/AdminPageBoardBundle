@@ -42,7 +42,7 @@ class AdminShowBlockService extends BaseBlockService
      */
     public function getName()
     {
-        return 'News detail';
+        return 'Admin show';
     }
 
     /**
