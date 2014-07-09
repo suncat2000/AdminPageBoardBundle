@@ -183,7 +183,7 @@ class EntityBlockService extends BaseBlockService
 
 ### Add block to page-board configuration
 
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
     page_boards:
@@ -199,7 +199,7 @@ suncat_admin_page_board:
                 path: /namespace/your/entity/{id}/board
                 requirements:
                     id:  \d+
-````
+```
 
 ### Add `board` action to configureListFields()
 

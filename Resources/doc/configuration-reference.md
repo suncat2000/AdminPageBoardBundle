@@ -1,6 +1,6 @@
 ### Configuration reference
 
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
     page_boards:
@@ -42,4 +42,4 @@ suncat_admin_page_board:
         sonata_admin_list_builder_class: "Suncat\AdminPageBoardBundle\Builder\ListBuilder"  # override list builder
         sonata_admin_version: 2.3 (default)                                           # 2.2 left,center,right grid
                                                                                       # 2.3 top,left,center,right,bottom
-````
+```

@@ -5,13 +5,11 @@ Installation
 
 Add to `composer.json` in your project to `require` section:
 
-````
-...
+```json
     {
         "suncat/admin-page-board-bundle": "dev-master"
     }
-...
-````
+```
 
 Run command:
 `php composer.phar install`
@@ -41,16 +39,16 @@ public function registerBundles()
 ```
 
 #### Define routes 
-````
+```yaml
 # app/config/routing.yml
 _suncat_admin_page_board:
     resource: .
     type: sonata_admin_page_board
     prefix: /admin
-````
+```
 
 #### Conﬁgure `sonata_block` in your YAML conﬁguration
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 sonata_block:
     default_contexts: [admin]
@@ -58,10 +56,10 @@ sonata_block:
         sonata.admin.block.admin_list:
             contexts: [admin]
         sonata.block.service.text: ~
-````
+```
 
 #### Conﬁgure `suncat_admin_page_board` in your YAML conﬁguration
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
     page_boards:
@@ -76,4 +74,4 @@ suncat_admin_page_board:
             route:
                 name: admin_suncat_test_page_board
                 path: /suncat/admin/test/board
-````
+```

@@ -3,7 +3,7 @@ Show entity by data from configureShowFields()
 
 ### Add block to page-board configuration
 
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
     page_boards:
@@ -25,7 +25,7 @@ suncat_admin_page_board:
                 path: /suncat/admin/news/{id}/board
                 requirements:
                     id:  \d+
-````
+```
 
 ### Define configureShowFields() method in EntityAdmin class
 
