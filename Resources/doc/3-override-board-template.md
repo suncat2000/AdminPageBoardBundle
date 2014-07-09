@@ -12,15 +12,16 @@ suncat_admin_page_board:
 
 #### Create page-board template
  
-.. code-block:: jinja
-    {# src/Namespace/YourBundle/Resources/views/Core/page_board.html.twig #}
-    
-    {% extends 'SuncatAdminPageBoardBundle:Core:page_board.html.twig' %}
-    {# extends 'SonataAdminBundle:Core:dashboard.html.twig' #}
-    
-    {# override blocks#}
-    {% block title %}{% endblock%}
-    
-    {% block breadcrumb %}{% endblock %}
-    
-    {% block content %}{% endblock %}
+```jinja
+{# src/Namespace/YourBundle/Resources/views/Core/page_board.html.twig #}
+
+{% extends 'SuncatAdminPageBoardBundle:Core:page_board.html.twig' %}
+{# extends 'SonataAdminBundle:Core:dashboard.html.twig' #}
+
+{# override blocks#}
+{% block title %}{% endblock%}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block content %}{% endblock %}
+```

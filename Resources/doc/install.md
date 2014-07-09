@@ -6,9 +6,9 @@ Installation
 Add to `composer.json` in your project to `require` section:
 
 ```json
-    {
-        "suncat/admin-page-board-bundle": "dev-master"
-    }
+{
+    "suncat/admin-page-board-bundle": "dev-master"
+}   
 ```
 
 Run command:
