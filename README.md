@@ -11,7 +11,7 @@ Features
 - Customization every block (blocks based on SonataBlockBundle) with Twig, Bootstrap and another tools
 - Define custom route for every page (custom name, path, host, etc.)
 - Pass route params (`$request->get('_route_params')`) into every block settings (`$blockContext->getSettings()['route_params']`)
-- Block service for show entity by data form configureShowFields() of EntityAdmin class
+- Block service for show Entity by data from configureShowFields() of EntityAdmin class
 
 
 Documentation
