@@ -2,6 +2,7 @@
 
 namespace Suncat\AdminPageBoardBundle;
 
+use Suncat\AdminPageBoardBundle\DependencyInjection\Compiler\SonataAdminListBuilderPass;
 use Suncat\AdminPageBoardBundle\DependencyInjection\Compiler\SonataBlockServicePass;
 use Suncat\AdminPageBoardBundle\DependencyInjection\Compiler\SonataAdminConfigPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -40,6 +41,7 @@ class SuncatAdminPageBoardBundle extends Bundle
         parent::build($container);
         $container->addCompilerPass(new SonataAdminConfigPass());
         $container->addCompilerPass(new SonataBlockServicePass());
+        $container->addCompilerPass(new SonataAdminListBuilderPass());
     }
 
 }

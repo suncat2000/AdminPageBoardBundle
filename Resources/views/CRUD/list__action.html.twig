@@ -1,0 +1,13 @@
+{% extends 'SonataAdminBundle:CRUD:list__action.html.twig' %}
+
+{% block field %}
+    <div class="btn-group">
+        {% for name,action in field_description.options.actions %}
+            {% if (name == 'board' or (action.type is defined and action.type == 'page_board')) and action.route is defined and action.sonata_admin_object_id_param is defined %}
+                {% include action.template with { 'action': action }%}
+            {% else %}
+                {% include action.template %}
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

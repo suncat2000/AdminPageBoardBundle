@@ -1,0 +1,28 @@
+{% if admin.isGranted('SHOW', object) and admin.hasRoute('show') %}
+    {% set btn_label = 'action_board' %}
+    {% set btn_label_catalogue = 'SuncatAdminPageBoardBundle' %}
+    {% set route_object_id_param = 'id' %}
+
+    {% if action.label is defined %}
+        {% set btn_label = action.label %}
+    {% endif %}
+
+    {% if action.label_catalogue is defined %}
+        {% set btn_label_catalogue = action.label_catalogue %}
+    {% endif %}
+
+    {% if action.sonata_admin_object_id_param is defined %}
+        {% set route_object_id_param = action.sonata_admin_object_id_param %}
+    {% endif %}
+
+    {% block board_btn %}
+        <a href="{{ path(action.route, { (route_object_id_param) : object.id }) }}" class="btn btn-sm btn-default board_link" title="{{ btn_label|trans({}, btn_label_catalogue) }}">
+            {% if action.icon is defined %}
+                {{ action.icon|raw }}
+            {% else %}
+                <i class="fa fa-tachometer"></i>
+            {% endif %}
+            {{ btn_label|trans({}, btn_label_catalogue) }}
+        </a>
+    {% endblock %}
+{% endif %}
