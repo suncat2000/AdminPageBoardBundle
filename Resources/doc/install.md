@@ -25,7 +25,14 @@ Or run command:
 public function registerBundles()
 {
     return array(
-         // ...
+        // ...
+        // SONATA
+        new Sonata\CoreBundle\SonataCoreBundle(),
+        new Sonata\BlockBundle\SonataBlockBundle(),
+        new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+        new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+        new Sonata\AdminBundle\SonataAdminBundle(),
+        // SUNCAT
         new Suncat\AdminPageBoardBundle\SuncatAdminPageBoardBundle(),
         // ...
     );
