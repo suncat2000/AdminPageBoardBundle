@@ -89,7 +89,7 @@ class EntityAdmin extends Admin
 
 #### Board action
 
-- [Full options list for 'board' action](5-board-action-reference.md)
+- [Full options for 'board' action](5-board-action-reference.md)
 - [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
 
 
