@@ -21,7 +21,7 @@ class CoreController extends BaseCoreController
         $pageBoardManager = $this->get('suncat_admin_page_board.manager');
         $sonataAdminVersion = $this->container->getParameter('suncat_admin_page_board.sonata_admin_version');
 
-        $pageBlocks = $pageBlocks = $pageBoardManager->getPageBlocksByRequest($request);
+        $pageBlocks = $pageBoardManager->getPageBlocksByRequest($request);
 
         if ($sonataAdminVersion >= 2.3) {
             $blocks = array(
