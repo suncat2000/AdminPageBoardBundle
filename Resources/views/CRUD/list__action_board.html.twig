@@ -1,4 +1,4 @@
-{% if admin.isGranted('SHOW', object) and admin.hasRoute('show') %}
+{% if admin.isGranted('VIEW', object) and admin.hasRoute('show') %}
     {% set btn_label = 'action_board' %}
     {% set btn_label_catalogue = 'SuncatAdminPageBoardBundle' %}
     {% set route_object_id_param = 'id' %}

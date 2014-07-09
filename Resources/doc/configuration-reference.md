@@ -35,10 +35,11 @@ suncat_admin_page_board:
             route:
                 name: admin_suncat_another_page
                 path: /suncat/admin/another/page
-        routes_loader_class: "Suncat\AdminPageBoardBundle\Routing\RouteLoader"        # override route loader
-        routes_config_class: "Suncat\AdminPageBoardBundle\Routing\RouteConfig"        # override route config
-        sonata_admin_layout_template: "SuncatAdminPageBoardBundle::layout.html.twig"  # override sonata layout 
-        page_board_template: "SuncatAdminPageBoardBundle:Core:page_board.html.twig"   # override board template 
+        routes_loader_class: "Suncat\AdminPageBoardBundle\Routing\RouteLoader"              # override route loader
+        routes_config_class: "Suncat\AdminPageBoardBundle\Routing\RouteConfig"              # override route config
+        page_board_template: "SuncatAdminPageBoardBundle:Core:page_board.html.twig"         # override board template 
+        sonata_admin_layout_template: "SuncatAdminPageBoardBundle::layout.html.twig"        # override sonata layout 
+        sonata_admin_list_builder_class: "Suncat\AdminPageBoardBundle\Builder\ListBuilder"  # override list builder
         sonata_admin_version: 2.3 (default)                                           # 2.2 left,center,right grid
                                                                                       # 2.3 top,left,center,right,bottom
 ````

@@ -201,7 +201,7 @@ suncat_admin_page_board:
                     id:  \d+
 ````
 
-### Add `board` action button to configureListFields()
+### Add `board` action to configureListFields()
 
 ```php
 <?php
@@ -237,9 +237,9 @@ class EntityAdmin extends Admin
     ...
 }
 ```
-#### Board action button
+#### Board action
 
-- [Full options list for `board` action](5-board-action-reference.md)
+- [Full options list for 'board' action](5-board-action-reference.md)
 - [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
 
 ### Click on `Board` button

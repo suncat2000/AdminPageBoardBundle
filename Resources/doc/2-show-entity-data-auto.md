@@ -14,26 +14,12 @@ suncat_admin_page_board:
                     type: suncat_admin_page_board.admin.block.admin_show
                     settings:
                         title: News detail (admin show)
-                        sonata_admin_code: suncat_admin.admin.news  # *required
-                        sonata_admin_object_id_param: 'id'          # (default, change to 'newsId', if route path .../admin/news/{newsId}/board)
+                        sonata_admin_code: suncat_admin.admin.news  # (*required) Sonata Admin service name
+                        sonata_admin_object_id_param: 'id'          # (default) change to 'newsId', if route path .../admin/news/{newsId}/board)
                         btn_add: true|false (default true)          # show Add new entity btn
                         btn_edit: true|false (default true)         # show Edit entity btn
                         btn_list: true|false (default true)         # show List entities btn
-                -
-                    position: left
-                    type: suncat_admin.admin.block.news_detail
-                    settings:
-                        title: News detail (manual)
-                -
-                    position: right
-                    type: suncat_admin.admin.block.news_comments
-                    settings:
-                        title: News comments
-                -
-                    position: right
-                    type: suncat_admin.admin.block.news_tags
-                    settings:
-                        title: News tags
+                ...
             route:
                 name: admin_suncat_admin_news_board
                 path: /suncat/admin/news/{id}/board
@@ -101,9 +87,9 @@ class EntityAdmin extends Admin
 }
 ```
 
-#### Board action button
+#### Board action
 
-- [Full options list for `board` action](5-board-action-reference.md)
+- [Full options list for 'board' action](5-board-action-reference.md)
 - [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
 
 

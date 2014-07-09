@@ -1,7 +1,5 @@
-Custom Sonata Admin List view action button
+Custom Sonata Admin List view action
 ------------
-
-### Add custom `list` action button for EntityAdmin
 
 ```php
 <?php

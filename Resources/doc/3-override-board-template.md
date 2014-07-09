@@ -16,9 +16,7 @@ suncat_admin_page_board:
 {# src/Namespace/YourBundle/Resources/views/Core/page_board.html.twig #}
 
 {% extends 'SuncatAdminPageBoardBundle:Core:page_board.html.twig' %}
-{# or 
-    {% extends 'SonataAdminBundle:Core:dashboard.html.twig' %}
-#}
+{# extends 'SonataAdminBundle:Core:dashboard.html.twig' #}
 
 {# override blocks#}
 {% block title %}{% endblock%}
