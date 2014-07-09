@@ -78,39 +78,34 @@ class EntityAdmin extends Admin
     ...
 ```
 
-### add custom `list` action button
+### add `board` action button
 
 ```php
     /**
-     * {@inheritdoc}
-     */
-    protected function configureListFields(ListMapper $listMapper)
-    {
-        $listMapper
-            ->addIdentifier('id')
-            ->add('field1')
-            ->add('field2')
-            ->add('_action', 'actions', array(
-                'actions' => array(
-                    'entity_board' => array('template' => 'YourBundle:Admin/CRUD:list__action_entity_board.html.twig'),
-                )
-            ))
-        ;
-    }
+         * {@inheritdoc}
+         */
+        protected function configureListFields(ListMapper $listMapper)
+        {
+            $listMapper
+                ->addIdentifier('id')
+                ->add('field1')
+                ->add('field2')
+                ->add('_action', 'actions', array(
+                    'actions' => array(
+                        'board' => array('route' => 'admin_namespace_your_entity_board'),  # route name of page-board
+                    )
+                ))
+            ;
+        }
     ...
 }
 ```
 
-### Create custom action template
+#### Board action button
 
-````
-{# src/Namespace/YourBundle/Resources/views/Admin/CRUD/list__action_entity_board.html.twig #}
-{% if admin.isGranted('VIEW', object) and admin.hasRoute('show') %}
-    <a href="{{ path('admin_namespace_your_entity_board', {id: object.id}) }}" class="btn btn-sm btn-default view_link" title="Show entity board">
-        <i class="fa fa-tachometer"></i> Board
-    </a>
-{% endif %}
-````
+- [Full options list for `board` action](5-board-action-reference.md)
+- [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
+
 
 ### Click on `Board` button
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen2.png)

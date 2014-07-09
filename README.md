@@ -12,6 +12,7 @@ Features
 - Define custom route for every page (custom name, path, host, etc.)
 - Pass route params (`$request->get('_route_params')`) into every block settings (`$blockContext->getSettings()['route_params']`)
 - Block service for show Entity by data from configureShowFields() of EntityAdmin class
+- Custom action (`_action`) button to page-board in Sonata Admin List view (configureListFields())
 
 
 Documentation
@@ -35,10 +36,8 @@ TODO
 ------------
 
 - Write Tests
-- Add prepared list actions
-- Improve opportunities for least manual work (writing code)
 - Implement adding page-board link to sidebar menu
 
 Example screen
 ------------
-![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)
+![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen4.png)
