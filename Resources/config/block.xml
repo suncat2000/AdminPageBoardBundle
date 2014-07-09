@@ -7,6 +7,7 @@
     <parameters>
         <parameter key="suncat_admin_page_board.block.loader.class">Suncat\AdminPageBoardBundle\Block\Loader\ServiceLoader</parameter>
         <parameter key="suncat_admin_page_board.block.loader.chain.class">Suncat\AdminPageBoardBundle\Block\Loader\BlockLoaderChain</parameter>
+        <parameter key="suncat_admin_page_board.admin.block.admin_show.class">Suncat\AdminPageBoardBundle\Block\Service\AdminShowBlockService</parameter>
     </parameters>
 
     <services>
@@ -14,8 +15,16 @@
             <tag name="sonata.block.loader"/>
             <argument/>
         </service>
+
         <service id="suncat_admin_page_board.block.loader.chain" class="%suncat_admin_page_board.block.loader.chain.class%">
             <argument/>
+        </service>
+
+        <service id="suncat_admin_page_board.admin.block.admin_show" class="%suncat_admin_page_board.admin.block.admin_show.class%">
+            <argument>suncat_admin_page_board.admin.block.admin_show</argument>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.admin.pool"/>
+            <tag name="sonata.block" />
         </service>
     </services>
 </container>

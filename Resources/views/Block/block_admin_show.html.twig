@@ -1,0 +1,41 @@
+{% extends sonata_block.templates.block_base %}
+
+{% block block %}
+    <h4 class="news-detail-data-title">{{ settings.title }}</h4>
+    <hr style="margin-top:0;">
+    <div class="news-detail-data-container">
+        <div class="row">
+            <div class="col-md-7">
+                <strong style="font-size: 18px;">#{{ object.id }}</strong>
+            </div>
+            <div class="col-md-5">
+                <div class="sonata-actions btn-group">
+                    {% include 'SuncatAdminPageBoardBundle:Button:create_button.html.twig' %}
+                    {% include 'SuncatAdminPageBoardBundle:Button:edit_button.html.twig' %}
+                    {% include 'SuncatAdminPageBoardBundle:Button:list_button.html.twig' %}
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {% for name, view_group in admin.showgroups %}
+                    {% if name %}
+                        <h4>{{ admin.trans(name) }}</h4>
+                    {% endif %}
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                        {% for field_name in view_group.fields %}
+                            <tr class="sonata-ba-view-container">
+                                {% if elements[field_name] is defined %}
+                                    {{ elements[field_name]|render_view_element(object) }}
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

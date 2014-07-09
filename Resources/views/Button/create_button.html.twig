@@ -1,0 +1,5 @@
+{% if admin.hasRoute('create') and admin.isGranted('CREATE') and settings.btn_add %}
+        <a class="btn btn-sm btn-success btn-outline sonata-ba-action sonata-action-element" href="{{ admin.generateUrl('create') }}">
+            <i class="fa fa-plus-circle"></i>
+            {{ 'link_action_create'|trans({}, 'SonataAdminBundle') }}</a>
+{% endif %}
