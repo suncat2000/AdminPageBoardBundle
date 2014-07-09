@@ -132,7 +132,7 @@ class EntityBlockService extends BaseBlockService
 
 ### Create block twig template
 
-````
+```jinja
 {# src/Namespace/YourBundle/Resources/views/Block/block_entity.html.twig #}
 
 {% extends sonata_block.templates.block_base %}
@@ -179,7 +179,7 @@ class EntityBlockService extends BaseBlockService
         {% endif %}
     </div>
 {% endblock %}
-````
+```
 
 ### Add block to page-board configuration
 

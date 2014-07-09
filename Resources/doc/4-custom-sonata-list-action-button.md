@@ -38,11 +38,11 @@ class EntityAdmin extends Admin
 
 ### Create custom action template
 
-````
+```jinja
 {# src/Namespace/YourBundle/Resources/views/Admin/CRUD/list__action_entity_board.html.twig #}
 {% if admin.isGranted('VIEW', object) and admin.hasRoute('show') %}
     <a href="{{ path('admin_namespace_your_entity_board', {id: object.id}) }}" class="btn btn-sm btn-default view_link" title="Show entity board">
         <i class="fa fa-tachometer"></i> Board
     </a>
 {% endif %}
-````
+```
