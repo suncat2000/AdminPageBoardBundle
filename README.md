@@ -6,13 +6,13 @@ Symfony2 bundle for generating page-boards in SonataAdminBundle, similar Sonata 
 Features
 ------------
 
-- Create custom page-boards similar as dashboard page of SonataAdminBundle
+- Create custom page-boards similar as SonataAdminBundle `dashboard`
 - Configure position (left,center,right, if sonata >= 2.3 then top,bottom) for every block of page-board
-- Customization every block (blocks based on SonataBlockBundle) with Twig, Bootstrap and another tools
+- Customization every block (blocks based on SonataBlockBundle) with Twig, Bootstrap and other tools
 - Define custom route for every page (custom name, path, host, etc.)
 - Pass route params (`$request->get('_route_params')`) into every block settings (`$blockContext->getSettings()['route_params']`)
-- Block service for show Entity by data from configureShowFields() of EntityAdmin class
-- Custom action (`_action`) button to page-board in Sonata Admin List view (configureListFields())
+- Block service for show Entity by configureShowFields() of EntityAdmin class
+- `board` action (`_action`) and button with link to page-board in Sonata Admin List view (configureListFields())
 
 
 Documentation
