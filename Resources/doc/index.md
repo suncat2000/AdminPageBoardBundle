@@ -1,5 +1,5 @@
 Getting Started With SuncatAdminPageBoard
-=====================================
+------------
 
 #### Installation
 - [Setting up the bundle](install.md)

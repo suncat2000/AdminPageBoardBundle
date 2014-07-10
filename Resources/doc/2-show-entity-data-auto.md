@@ -3,7 +3,7 @@ Show entity by data from configureShowFields()
 
 ### Add block to page-board configuration
 
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
     page_boards:
@@ -16,16 +16,16 @@ suncat_admin_page_board:
                         title: News detail (admin show)
                         sonata_admin_code: suncat_admin.admin.news  # (*required) Sonata Admin service name
                         sonata_admin_object_id_param: 'id'          # (default) change to 'newsId', if route path .../admin/news/{newsId}/board)
-                        btn_add: true|false (default true)          # show Add new entity btn
-                        btn_edit: true|false (default true)         # show Edit entity btn
-                        btn_list: true|false (default true)         # show List entities btn
+                        btn_add: true                               # (default true) show Add new entity btn
+                        btn_edit: true                              # (default true) show Edit entity btn
+                        btn_list: true                              # (default true) show List entities btn
                 ...
             route:
                 name: admin_suncat_admin_news_board
                 path: /suncat/admin/news/{id}/board
                 requirements:
                     id:  \d+
-````
+```
 
 ### Define configureShowFields() method in EntityAdmin class
 
@@ -89,7 +89,7 @@ class EntityAdmin extends Admin
 
 #### Board action
 
-- [Full options list for 'board' action](5-board-action-reference.md)
+- [Full options for 'board' action](5-board-action-reference.md)
 - [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
 
 

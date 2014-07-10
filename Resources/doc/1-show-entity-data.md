@@ -132,7 +132,7 @@ class EntityBlockService extends BaseBlockService
 
 ### Create block twig template
 
-````
+```jinja
 {# src/Namespace/YourBundle/Resources/views/Block/block_entity.html.twig #}
 
 {% extends sonata_block.templates.block_base %}
@@ -179,11 +179,11 @@ class EntityBlockService extends BaseBlockService
         {% endif %}
     </div>
 {% endblock %}
-````
+```
 
 ### Add block to page-board configuration
 
-````
+```yaml
 # app/conﬁg/conﬁg.yml
 suncat_admin_page_board:
     page_boards:
@@ -199,7 +199,7 @@ suncat_admin_page_board:
                 path: /namespace/your/entity/{id}/board
                 requirements:
                     id:  \d+
-````
+```
 
 ### Add `board` action to configureListFields()
 
@@ -239,11 +239,11 @@ class EntityAdmin extends Admin
 ```
 #### Board action
 
-- [Full options list for 'board' action](5-board-action-reference.md)
+- [Full options for 'board' action](5-board-action-reference.md)
 - [Custom Sonata List view action button](4-custom-sonata-list-action-button.md)
 
-### Click on `Board` button
+#### Click on `Board` button
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen2.png)
 
-### Look something this
+#### Look something this
 ![](https://raw.githubusercontent.com/suncat2000/AdminPageBoardBundle/master/Resources/doc/screen1.png)

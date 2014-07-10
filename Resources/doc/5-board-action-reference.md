@@ -1,4 +1,4 @@
-Full options list for `board` action of Sonata Admin List view
+Full options for `board` action of Sonata Admin List view
 ------------
 
 ```php
