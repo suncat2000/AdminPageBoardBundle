@@ -23,6 +23,7 @@ class CoreController extends BaseCoreController
 
         $pageBlocks = $pageBoardManager->getPageBlocksByRequest($request);
 
+        // adaptation to top,left,center,right,bottom grid
         if ($sonataAdminVersion >= 2.3) {
             $blocks = array(
                 'top'    => array(),
@@ -33,6 +34,12 @@ class CoreController extends BaseCoreController
             );
 
             foreach ($pageBlocks as $block) {
+                if (
+                    in_array($block['position'], array('top', 'bottom')) &&
+                    (!isset($block['class']) || null === $block['class'])
+                ) {
+                    $block['class'] = 'col-md-12';
+                }
                 $blocks[$block['position']][] = $block;
             }
 
